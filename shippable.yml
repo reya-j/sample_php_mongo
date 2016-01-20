@@ -16,3 +16,10 @@ script:
   
 notifications:
    email: false
+env:
+  global:
+    - APP_NAME=shroudd-headland-1758
+
+after_success :
+  - git push -f git@heroku.com:$APP_NAME.git master
+
