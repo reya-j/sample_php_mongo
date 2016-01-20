@@ -21,5 +21,5 @@ env:
     - APP_NAME=herokuphpsreya
 
 after_success :
-  - git push -f git@heroku.com:herokuphpsreya.git master
+   - git push -f git@heroku.com:$APP_NAME.git master
 
