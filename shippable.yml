@@ -18,7 +18,7 @@ notifications:
    email: false
 env:
   global:
-    - APP_NAME=herokuphpsreya
+    - APP_NAME=toolheroku
 
 after_success :
    - git push -f git@heroku.com:$APP_NAME.git master
