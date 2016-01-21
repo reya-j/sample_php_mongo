@@ -17,7 +17,7 @@ script:
 notifications:
    email: false
 env:
-  global:
+   global:
     - APP_NAME=toolheroku
 
 after_success :
